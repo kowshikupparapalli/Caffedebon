@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caffe de Bon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Splash&family=The+Nautigal:wght@700&display=swap"  rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="Caffelogo.png">
+</head>
+<style>
+    body{
+        padding: 0%;
+        margin: 0%;
+        width: 100%;
+        background-color: rgb(252, 218, 143);
+        font-family : 'Carter One', Cursive;    
+    }
+    #topp{
+        position: sticky;
+        top: 0%;
+        width: 100%;
+    }
+    .header img{
+        width: 100px;
+        mix-blend-mode: multiply;
+    }
+    .header{ 
+        background-color: rgb(252, 218, 143);
+        padding: 0% 50%;
+        margin-top: 0px;
+        padding-top: 0px;
+        align-content: center;
+    }
+    .navbar{
+        align-items: base;
+        align-content: space-between;
+        background-color: white;
+        border-radius: 0%;
+        background-blend-mode: darken;
+        margin: 0px 0px;
+        border-color: goldenrod; 
+        width: 100%;
+    }
+    .search{
+        display: inline-block;
+        padding: 1% 3%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    #search{
+        border-radius: 20%;
+        width: 200%;
+        height: 30%;
+    }
+    .navbuts{
+        display: inline-block;
+        padding: 0%;
+        margin: 2px 2opx;
+        margin-left: 100px;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: darkolivegreen;
+        padding :0% 5px;
+        margin: 0% 20px;
+        font-family: cursive;
+    }
+    #main img{
+        width: 100%;
+    }
+    #slider{
+        overflow: hidden;
+        height: 600px;
+        width: 1200px;
+        margin-left: 200px;
+    }
+    @-webkit-keyframes slide_animation{
+        0%{left: 0px;}
+        10%{left: 0px;}
+        20%{left: 1200px;}
+        30%{left: 1200px;}
+        40%{left: 2400px;}
+        50%{left: 2400px;}
+        60%{left: 1200px;}
+        70%{left: 1200px;}
+        80%{left: 0px;}
+        90%{left: 0px;}
+        100%{left: 0px;}
+    }
+    .slideimages{
+        width: 3600px;
+        margin: 0 0 0 -2400px;
+        position: relative;
+        -webkit-animation-name: slide_animation;
+        -webkit-animation-duration: 33s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+    .slide{
+        height: 600px;
+        width: 1200px;
+        position: relative;
+        float: left;
+    }
+    #centry{
+        padding-top: 8%;
+        height: 80%;
+        margin: 3% 15% ;
+        background-color: white;
+        margin-top: 50px;
+        border-radius: 50px;
+        
+    }
+    .brochure{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 25%;
+        margin-right: 5%;
+        display: inline-block;
+        padding: 0%;
+    }
+    .menu{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 20%;
+        display: inline-block;
+        padding: 0%;
+    }
+    .brochure video{
+        padding: 0%;
+        display: inline-block;
+        width: 200px;
+    }
+    .menu img {
+        align-items: flex-end;
+        display: inline-block;
+        width: 200px;
+    }
+        .productcard{
+            margin: 2% 1%;
+            padding: 1%;
+            background-color: white;
+            display: inline-block;
+            height: 50%;
+            border-radius: 4%;
+        }
+        .productcard img{
+            width: 300px;
+        }
+        .productcard img :hover{
+            width: 320px;
+        }
+        .productcard:hover{
+        background-color: rgb(191, 191, 131);
+        }
+        .productcardtext{
+            text-align: center;
+        }
+        .productcardbtn{
+            margin: 0% 40%;
+            width: 20%;
+            background-color: rgb(252, 218, 143);
+            font-size: large;
+            border-radius: 30%;
+        }
+        .productcardbtn:hover{
+            background-color: brown;
+        }
+        .blockhead{
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #coffeeblock{
+            padding-top: 10%;
+        }
+        #juiceblock{
+            padding-top: 10%;
+        }
+        #teablock{
+            padding-top: 10%;
+        }
+        #breadblock{
+            padding-top: 10%;
+        }
+        #about{
+            padding-top: 10%;
+        }
+        .abouthead{
+            font-size: 300%;
+            text-align: center;
+        }
+        .aboutpic{
+            display: inline-block;
+            width: 20%;
+        }
+        .aboutpic img{
+            padding-left: 30%;
+            width: 40%;
+        }
+        .abouttext{
+            display: inline-block;
+        }
+        #contact{
+            padding-top: 10%;
+        }
+        .icons{
+            padding-left: 2%;
+            padding-top: 4%;
+            display: inline-block;
+            margin: auto;
+        }
+        .icons img{
+            width: 5%;
+        }
+        .footer{
+            background-color:white; 
+            font-family: 'Carter One', Cursive;  
+            padding: 3%;
+            text-align: center;
+            font-size: 200%;
+        }
+        
+</style>
+
+<body>
+
+    <div id="topp">
+    <header class="header">
+        <img src="Caffelogo.png" >
+    </header>
+
+    <nav class="navbar">
+        <div class="search">
+            <input type="search" id="search" placeholder="Search here">
+        </div>
+        <div class="navbuts">
+        <ul>
+            <li><a href="#main" class="active">Home</a></li>
+            <li><a href="#centry" class="active">Menucard</a></li>
+            <li><a href="#coffeeblock" class="active">Coffee</a></li>
+            <li><a href="#juiceblock" class="active">Juice</a></li>
+            <li><a href="#teablock" class="active">Tea</a></li>
+            <li><a href="#breadblock" class="active">Bread</a></li>
+            <li><a href="#about" class="active">About Us</a></li>
+            <li><a href="#contact" class="active">Contact Us</a></li>
+        </ul> 
+        </div>
+    </nav>
+    </div>
+    
+     
+    <div id="main">
+        <img src="main.jpg" >
+    </div>
+
+    <div id="slider">
+        <div class="slideimages">
+            <img class="slide" src="couple.jpg" alt="">
+            <img class="slide" src="barista.jpg" alt="">
+            <img class="slide" src="peace.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="centry">
+        <div class="brochure">
+            <video src="brochure.mp4"></video>
+        </div>
+        <div class="menu">
+            <img src="menu.jpg" >
+        </div>
+    </div> 
+
+    <div id="coffeeblock">
+        <h1 class="blockhead">Coffee Stall</h1>
+        <div class="productcard">
+            <img src="coffee2.jpg">
+            <div class="productcardtext">Cappucino <br>$10</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="coffee4.jpg">
+            <div class="productcardtext">Expresso <br>$7</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="coffee1.jpg">
+            <div class="productcardtext">Latte <br>$8</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="coffee3.jpg">
+            <div class="productcardtext">Cold Coffee <br>$9</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="juiceblock">
+        <h1 class="blockhead">Juice Stall</h1>
+        <div class="productcard">
+            <img src="lemonjuice.jpg">
+            <div class="productcardtext">lemon Juice <br>$8</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="orangejuice.jpg">
+            <div class="productcardtext">Orange Juice <br>$6</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="grapejuice.jpg">
+            <div class="productcardtext">Grape juice <br>$6</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="mangojuice.jpg">
+            <div class="productcardtext">Mango Juice <br>$7</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="teablock">
+        <h1 class="blockhead">Tea Stall</h1>
+        <div class="productcard">
+            <img src="tea1.jpg">
+            <div class="productcardtext">Milk Tea <br>$7</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="tea2.jpg">
+            <div class="productcardtext">Green Tea <br>$6</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="tea3.jpg">
+            <div class="productcardtext">Black Tea <br>$5</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="tea4.jpg">
+            <div class="productcardtext">Iced Tea <br>$4</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="breadblock">
+        <h1 class="blockhead">Bread Stall</h1>
+        <div class="productcard">
+            <img src="baguette.jpg">
+            <div class="productcardtext">Baguette <br>$6</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="croissant.jpg">
+            <div class="productcardtext">Croissant <br>$5</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="donuts.jpg">
+            <div class="productcardtext">Donut <br>$5</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+        <div class="productcard">
+            <img src="toast.jpg">
+            <div class="productcardtext">Toast <br>$3</div>
+            <button class="productcardbtn">buy</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="about"> 
+        <h1 class="blockhead">About</h1>
+        <div class="aboutpic"><img src="founder.jpg"></div>
+        <div class="abouttext">
+            <h2>THOMAS TERESAN</h2> <br> <br> 
+            <p>The founder & the owner of <b>CAFFE DE BON</b> established this cafe in the year 1895 <br> after finishing his graduation in STRATSBOURG UNIVERSITY , taking his family recipe to all the world</p>
+            <p>We are expertised in making classic & traditional coffee , cafes are not just fooding place but a place to spend your valuable time.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="contact">
+        <h1 class="blockhead">Contact Us</h1>
+        <div class="icons"><img src="instagram.png">caffedebon/instagram.com</div>
+        <div class="icons"><img src="twitter.png">caffedebon/twitter.com</div>
+        <div class="icons"><img src="email.png">caffedebon@coffee.com</div>
+        <div class="icons"><img src="call.png">Call us</div>
+        <div class="icons"><img src="address.png">21-block , 56-avenue , Manhattan , New York</div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="footer">
+            Thank You <br> Visit us Again
+        </div>
+    </footer>
+
+</body>
+</html>
